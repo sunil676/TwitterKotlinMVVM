@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotlinTwitter</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">vfryMK9ME5MEzlWTHJnv9T479</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">BFjR59YJhVnXO0OLmrhsThGAFovSRfGf6n7UmYLBHKUUCInbfV</string>
+
+    <string name="content_description_avatar">avatar image</string>
+</resources>
