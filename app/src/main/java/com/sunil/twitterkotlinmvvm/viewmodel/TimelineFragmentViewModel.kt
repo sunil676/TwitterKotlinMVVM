@@ -8,6 +8,7 @@ import com.twitter.sdk.android.core.Result
 import com.twitter.sdk.android.core.TwitterCore
 import com.twitter.sdk.android.core.TwitterException
 import com.twitter.sdk.android.core.models.Tweet
+import io.reactivex.Observable
 
 /**
  * Created by sunil on 05-11-2017.
@@ -32,6 +33,25 @@ class TimelineFragmentViewModel(val timelineRefreshListener: TimelineRefreshList
                     }
                 })
     }
+
+     fun sendTweet(tweetText: String): Observable<Result<Tweet>> {
+        return Observable.create { subscriber ->
+            val callback = object : Callback<Tweet>() {
+                override fun success(result: Result<Tweet>) {
+                    Log.i(TAG, "Tweet tweeted")
+                    subscriber.onNext(result)
+                }
+
+                override fun failure(e: TwitterException) {
+                    Log.e(TAG, e.message, e)
+                    subscriber.onError(e)
+                }
+            }
+
+            TwitterCore.getInstance().apiClient.statusesService.update(tweetText, null, null, null, null, null, null, null, null).enqueue(callback)
+        }
+    }
+
     interface TimelineRefreshListener {
         fun onTimelineRefresh(tweets: List<Tweet>)
     }
