@@ -7,7 +7,7 @@ Twitter timeline sample app with Kotlin MVVM
 - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
    Rx Android library to switching threads between very easy.
 - [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
-   A library for networking operation and provide Reactive Nature.
+   MVVM is great android architeture design with greate support of LiveData, DataBinding, RxJava etc.
    Why MVVM? 
    1.Great compettion with MVC and MVP
    2.Reactive nature
@@ -19,4 +19,4 @@ Twitter timeline sample app with Kotlin MVVM
 - [Material Design](https://material.io/)
   It provides the material deisgn for UI.
 
-<img src="https://github.com/sunil676/TwitterKotlinMVVM/blob/master/Screenshot_20171105-224219.png" width="250" height="450"/><img src="https://github.com/sunil676/TwitterKotlinMVVM/blob/master/Screenshot_20171105-224330.png" width="250" height="450"/>
+<img src="https://github.com/sunil676/TwitterKotlinMVVM/blob/master/Screenshot_20171105-224219.png" width="250" height="450"/><img src="https://github.com/sunil676/TwitterKotlinMVVM/blob/master/Screenshot_20171108-235356.png" width="250" height="450"/><img src="https://github.com/sunil676/TwitterKotlinMVVM/blob/master/Screenshot_20171108-235418.png" width="250" height="450"/>
